@@ -1,0 +1,117 @@
+.tourIsrael {
+  margin-top: 50px;
+  min-height: 100vh;
+  padding-bottom: 100px;
+  header {
+    @include center(981px);
+    height: 413px;
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour/tour-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    h1 {
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      font-family: Proxima;
+      color: white;
+      font-size: 60px;
+      letter-spacing: 3px;
+      font-weight: lighter;
+    }
+    h2 {
+      position: absolute;
+      bottom: 0;
+      left: 30%;
+      font-family: Proxima;
+      color: white;
+      font-size: 30px;
+      letter-spacing: 3px;
+      font-weight: lighter;
+    }
+  }
+  .tour-preview {
+    @include center(981px, 40px auto 30px auto);
+    min-height: 347px;
+    // background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+
+    .tour-image-holder {
+      width: 298px;
+      height: 347px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .tour-image-1 {
+      background-image: url(../images/tour/tour-israel/israel-tour-01.jpg);
+    }
+
+    .tour-image-2 {
+      background-image: url(../images/tour/tour-israel/israel-tour-02.jpg);
+    }
+
+    .tour-image-3 {
+      background-image: url(../images/tour/tour-israel/israel-tour-03.jpg);
+    }
+  }
+  .tour-info {
+    @include center(981px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .tour-text {
+      h1 {
+        font-family: Proxima;
+        font-size: 60px;
+        letter-spacing: 2px;
+        font-weight: lighter;
+        margin-bottom: 0;
+      }
+      .line {
+        max-width: 171px;
+        border-bottom: black solid 2px;
+        margin-bottom: 35px;
+      }
+      p {
+        font-family: Gill;
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        margin-bottom: 80px;
+      }
+    }
+    .promoBtn {
+      @include siteButton(12px 25px 12px 25px, 50px);
+      font-family: Gill;
+      margin-top: 30px;
+      color: white;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .tourIsrael {
+    header {
+      width: 95%;
+    }
+
+    .tour-preview {
+      flex-direction: column;
+      align-items: center;
+
+      .tour-image-holder {
+        margin-bottom: 42px;
+      }
+    }
+    .tour-info {
+      padding: 0 15px 0 15px;
+    }
+  }
+}

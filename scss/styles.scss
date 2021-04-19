@@ -1,0 +1,38 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "structure.scss";
+
+// Home Assets
+@import "home/hero.scss";
+@import "home/promo-tours.scss";
+@import "home/nav.scss";
+
+//About
+@import "about.scss";
+
+//Tours
+@import "tour/tour.scss";
+@import "tour/israel.scss";
+@import "tour/usa.scss";
+@import "tour/australia.scss";
+@import "tour/newzealand.scss";
+@import "tour/france.scss";
+@import "tour/egypt.scss";
+@import "tour/japan.scss";
+@import "tour/canada.scss";
+@import "tour/uae.scss";
+
+//Special Offers
+@import "specialOffers.scss";
+
+//Blog
+@import "blog.scss";
+
+//Contact
+@import "contact.scss";
+
+//Form
+@import "home/booking-form.scss";
+
+//Footer
+@import "footer/footer.scss";

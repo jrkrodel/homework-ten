@@ -1,0 +1,226 @@
+.home {
+  min-height: 100vh;
+  padding-bottom: 100px;
+  .booking-form {
+    max-width: 100%;
+    margin: 0 auto 100px auto;
+    font-family: Gill;
+    font-size: 18px;
+    // background-color: darksalmon;
+
+    .header {
+      max-width: 818px;
+      margin: 50px auto 0 auto;
+      // background-color: green;
+
+      h1 {
+        font-family: Proxima;
+        font-weight: lighter;
+        color: black;
+        font-size: 60px;
+      }
+    }
+
+    .top-half {
+      max-width: 818px;
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // background-color: burlywood;
+      margin: 0 auto 20px auto;
+
+      .form-name {
+        min-width: 42%;
+        height: 58px;
+        padding-left: 15px;
+        font-family: Gill;
+        font-size: 18px;
+        border-color: $site-blue;
+        border-style: solid;
+        border-width: 1px;
+        outline: none;
+      }
+      .form-email {
+        min-width: 55%;
+        height: 58px;
+        padding-left: 15px;
+        font-family: Gill;
+        font-size: 18px;
+        border-color: $site-blue;
+        border-style: solid;
+        border-width: 1px;
+        outline: none;
+      }
+    }
+    .bottom-half {
+      max-width: 818px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 20px auto;
+      // background-color: burlywood;
+
+      .form-country {
+        min-width: 42%;
+        height: 58px;
+        padding-left: 15px;
+        font-family: Gill;
+        font-size: 18px;
+        border-color: $site-blue;
+        border-style: solid;
+        border-width: 1px;
+        outline: none;
+      }
+      .form-hotel {
+        min-width: 55%;
+        height: 58px;
+        padding-left: 15px;
+        font-family: Gill;
+        font-size: 18px;
+        border-color: $site-blue;
+        border-style: solid;
+        border-width: 1px;
+        outline: none;
+      }
+    }
+
+    .form-date {
+      max-width: 818px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+
+    .check-in {
+      width: 85%;
+      height: 58px;
+      font-family: Gill;
+      font-size: 18px;
+      padding-right: 15px;
+      padding-left: 15px;
+      border-color: $site-blue;
+      border-style: solid;
+      border-width: 1px;
+      outline: none;
+      margin-bottom: 20px;
+    }
+    .check-out {
+      width: 85%;
+      height: 58px;
+      font-family: Gill;
+      font-size: 18px;
+      padding-right: 15px;
+      padding-left: 15px;
+      border-color: $site-blue;
+      border-style: solid;
+      border-width: 1px;
+      outline: none;
+      margin-bottom: 20px;
+    }
+
+    .form-details {
+      max-width: 818px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .adults,
+      .children,
+      .rooms {
+        height: 58px;
+        width: 12%;
+        padding-left: 15px;
+        font-family: Gill;
+        font-size: 18px;
+        border-color: $site-blue;
+        border-style: solid;
+        border-width: 1px;
+        outline: none;
+      }
+    }
+
+    .form-message {
+      max-width: 818px;
+      // padding: 20px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .message {
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+        font-family: Gill;
+        font-size: 18px;
+        border-color: $site-blue;
+        border-style: solid;
+        border-width: 1px;
+        outline: none;
+      }
+      .form-submit {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        border-radius: 30px;
+        background-color: $site-blue;
+        color: white;
+        font-family: Gill;
+        border: none;
+        font-size: 20px;
+        margin-top: 20px;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .home {
+    .header {
+      padding-left: 15px;
+    }
+
+    .top-half {
+      flex-direction: column;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .bottom-half {
+      flex-direction: column;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .form-name,
+    .form-email,
+    .form-country,
+    .form-hotel {
+      width: 85%;
+    }
+
+    .form-name,
+    .form-country {
+      margin-bottom: 20px;
+    }
+    .form-date label {
+      margin-bottom: 16px;
+    }
+
+    .form-date {
+      padding: 15px;
+      flex-direction: column;
+    }
+
+    .form-details {
+      padding: 15px;
+    }
+
+    .form-message {
+      padding: 15px;
+    }
+  }
+}
