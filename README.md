@@ -1,4 +1,3 @@
-# homework-ten
-
-Travel Fly - One Page - MVC - Responsive Design<br/>
-web4 Link: http://in-info-web4.informatics.iupui.edu/~jrkrodel/homework-ten/index.html
+# travel-fly
+An example flight booking site - Responsive - MVC
+Link: jrkrodel.pages.iu.edu/travel-fly
